@@ -7,12 +7,12 @@ func Jump() string {
 }
 
 type Dog struct {
-	name string
-	race string
-	age int
+	Name string
+	Race string
+	Age int
 }
 
 func (d Dog) GetDogCredentials() string {
-	creds := fmt.Sprintf("The dog's name is %s. It's race is %s and is %d years old.", d.name, d.race, d.age)
+	creds := fmt.Sprintf("The dog's name is %s. It's race is %s and is %d years old.", d.Name, d.Race, d.Age)
 	return creds
 }
